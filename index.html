@@ -3,8 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Konvektor — конвектор изображений и документов</title>
-<meta name="description" content="Бесплатный конвектор изображений (JPG, PNG, WebP, AVIF, BMP, ICO, PDF) и документов (Блокнот TXT, Word DOCX, PDF) прямо в браузере. Файлы не загружаются на сервер.">
+<title>Konverters — конвертер изображений и документов онлайн</title>
+<meta name="description" content="Бесплатный конвертер изображений (JPG, PNG, WebP, AVIF, BMP, ICO, PDF) и документов (Блокнот TXT, Word DOCX, PDF) прямо в браузере. Файлы не загружаются на сервер.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://mykonvektor.ru/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Konverters — конвертер изображений и документов онлайн">
+<meta property="og:description" content="Бесплатно преобразуйте изображения (JPG, PNG, WebP и др.) и документы (Блокнот, Word, PDF) прямо в браузере.">
+<meta property="og:url" content="https://mykonvektor.ru/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%236366f1'/%3E%3Cpath d='M7 11h13M16 7l4 4-4 4M25 21H12M16 17l-4 4 4 4' fill='none' stroke='white' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<!-- ЯНДЕКС ВЕБМАСТЕР: вставьте сюда мета-тег подтверждения прав (выглядит как meta name="yandex-verification" content="...") -->
+<!-- ЯНДЕКС МЕТРИКА: вставьте сюда код счётчика целиком -->
 <style>
   :root {
     --bg:#f4f4f8; --card:#ffffff; --soft:#eeeef4; --text:#16161d; --muted:#7b7b8c;
@@ -130,6 +139,7 @@
   .error { color: #ef4444; font-size: .85rem; margin: 12px 2px 0; }
   .note { color: var(--muted); font-size: .78rem; margin: 8px 2px 0; }
 
+  .ad:empty { display: none; }
   .ad {
     min-height: 80px; border: 1px dashed var(--border); border-radius: 14px; margin-bottom: 14px;
     display: grid; place-items: center; color: var(--muted); font-size: .75rem; letter-spacing: .04em;
@@ -139,6 +149,12 @@
   summary { cursor: pointer; font-weight: 600; color: var(--text); font-size: .9rem; }
   details p { margin: 10px 0 0; }
 
+  .card h2 { font-size: 1.05rem; margin: 0 0 8px; letter-spacing: -.01em; }
+  .card > p { color: var(--muted); font-size: .9rem; margin: 8px 0 0; }
+  .card > p a { color: var(--a1); }
+  .faq details { padding: 11px 0; border-top: 1px solid var(--border); }
+  .faq details:first-of-type { border-top: 0; padding-top: 2px; }
+  .faq summary { font-size: .9rem; }
   footer { color: var(--muted); font-size: .78rem; text-align: center; margin-top: 22px; }
   footer a { color: var(--muted); }
   footer p { margin: 6px 0 0; }
@@ -162,7 +178,7 @@
   </header>
   <p class="sub">Конвертер изображений и документов: Блокнот, Word, PDF. Прямо в браузере, без загрузки на сервер.</p>
 
-  <div class="ad" id="ad-top">РЕКЛАМА</div>
+  <div class="ad" id="ad-top"><!-- сюда вставьте код рекламного блока РСЯ (верхний) --></div>
 
   <div class="tabs" role="tablist">
     <button type="button" class="on" data-tab="img" role="tab">Изображения</button>
@@ -338,11 +354,59 @@
     </details>
   </div>
 
-  <div class="ad" id="ad-bottom">РЕКЛАМА</div>
+  <div class="card">
+    <h2>О сервисе</h2>
+    <p>konverters — бесплатный онлайн-инструмент, который превращает файлы из одного формата в другой прямо в браузере. Регистрация не нужна, файлы остаются на вашем устройстве.</p>
+    <p><b>Изображения.</b> Сохраняйте картинки в JPG, PNG, WebP, AVIF (если его поддерживает браузер), BMP, ICO и PDF. Можно уменьшить вес фото ползунком качества и выбрать размер: оригинал, масштаб в процентах, Full HD, 4K, квадрат и вертикальный кадр для соцсетей, превью ссылки, иконки от 16 до 512 пикселей.</p>
+    <p><b>Документы.</b> Блокнот (TXT), Word (DOCX) и PDF: например, PDF в Word, Word в PDF, TXT в Word. Кодировки текста (UTF-8, Windows-1251) определяются автоматически.</p>
+  </div>
+
+  <div class="card faq">
+    <h2>Частые вопросы</h2>
+    <details>
+      <summary>Куда загружаются мои файлы?</summary>
+      <p>Никуда. Преобразование идёт в вашем браузере, файлы не отправляются на сервер сайта. Единственное исключение: чтобы прочитать PDF, браузер один раз загружает библиотеку чтения PDF, сам файл при этом не передаётся.</p>
+    </details>
+    <details>
+      <summary>Как уменьшить вес фотографии?</summary>
+      <p>Выберите формат JPG или WebP, уменьшите качество ползунком (значения 75–90% обычно почти не заметны глазу) и при необходимости выберите меньший размер.</p>
+    </details>
+    <details>
+      <summary>Как перевести PDF в Word?</summary>
+      <p>Откройте вкладку «Текст», выберите PDF-файл, затем «Word» и нажмите «Конвертировать». Переносятся текст и картинки. Шрифты, колонки и точная вёрстка не сохраняются.</p>
+    </details>
+    <details>
+      <summary>Почему из PDF не получается достать текст?</summary>
+      <p>Скорее всего, это скан или фотография страницы. Распознавания текста на картинке (OCR) на сайте нет: такой PDF превратится в документ Word, где каждая страница будет картинкой.</p>
+    </details>
+    <details>
+      <summary>Можно ли открыть старые файлы Word (.doc)?</summary>
+      <p>Нет, поддерживается только современный формат .docx. Откройте файл в Word и сохраните его как .docx. Картинки из файлов Word (DOCX) при конвертации пока не переносятся, только текст.</p>
+    </details>
+    <details>
+      <summary>Почему прозрачный фон стал белым?</summary>
+      <p>JPG и PDF не поддерживают прозрачность, поэтому фон заливается белым. Чтобы сохранить прозрачность, выберите PNG или WebP.</p>
+    </details>
+    <details>
+      <summary>Есть ли ограничения по размеру?</summary>
+      <p>Текстовые файлы, DOCX и PDF — до 25 МБ. Изображения очень большого размера (свыше 60 мегапикселей на выходе) не обрабатываются, их лучше сначала уменьшить.</p>
+    </details>
+    <details>
+      <summary>Это бесплатно?</summary>
+      <p>Да. Сервис бесплатен, регистрация не нужна. Сайт может показывать рекламу.</p>
+    </details>
+  </div>
+
+  <div class="card" id="contacts">
+    <h2>Контакты</h2>
+    <p>Нашли ошибку или есть идея? Напишите на <a href="mailto:sasha3561@list.ru">sasha3561@list.ru</a>.</p>
+  </div>
+
+  <div class="ad" id="ad-bottom"><!-- сюда вставьте код рекламного блока РСЯ (нижний) --></div>
 
   <footer>
-    Файлы обрабатываются только на вашем устройстве. <a href="#privacy">Политика конфиденциальности</a>
-    <p id="privacy">Мы не собираем и не храним ваши изображения и тексты. Рекламные сервисы могут использовать cookie для показа объявлений.</p>
+    <a href="privacy.html">Политика конфиденциальности</a> · <a href="#contacts">Контакты</a>
+    <p>Файлы обрабатываются на вашем устройстве и не отправляются на сервер. © 2026 konverters</p>
   </footer>
 </main>
 
