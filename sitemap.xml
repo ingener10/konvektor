@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://mykonvektor.ru/</loc>
-    <lastmod>2026-11-15</lastmod>
-  </url>
-  <url>
-    <loc>https://mykonvektor.ru/privacy.html</loc>
-    <lastmod>2026-11-15</lastmod>
-  </url>
+  <url><loc>https://mykonvektor.ru/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://mykonvektor.ru/pdf-v-word.html</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://mykonvektor.ru/word-v-pdf.html</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://mykonvektor.ru/txt-v-word.html</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://mykonvektor.ru/word-v-txt.html</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://mykonvektor.ru/jpg-v-png.html</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://mykonvektor.ru/png-v-jpg.html</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://mykonvektor.ru/webp-v-jpg.html</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://mykonvektor.ru/jpg-v-pdf.html</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://mykonvektor.ru/umenshit-foto.html</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://mykonvektor.ru/foto-v-ico.html</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://mykonvektor.ru/jpg-v-webp.html</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://mykonvektor.ru/privacy.html</loc><lastmod>2026-11-15</lastmod></url>
 </urlset>
